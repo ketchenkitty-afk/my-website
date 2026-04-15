@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Browning Heating & Air Conditioning LLC</title>
+    <meta name="description" content="Comprehensive HVAC services in Gainesville, FL including AC repair, heating installation, and preventative maintenance.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#003366',
+                            accent: '#FF6600',
+                            gray: '#4B5563',
+                            light: '#F3F4F6',
+                            sky: '#00AEEF',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans text-brand-blue bg-white">
+
+    <!-- Top Bar -->
+    <div class="hidden lg:block bg-brand-blue text-white py-2 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center text-xs font-bold tracking-wider uppercase">
+            <div class="flex items-center gap-6">
+                <span class="flex items-center gap-2">
+                    <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-accent"></i>
+                    (352) 306-4195
+                </span>
+                <span class="flex items-center gap-2">
+                    <i data-lucide="shield-check" class="w-3.5 h-3.5 text-brand-accent"></i>
+                    License #CAC1819657
+                </span>
+            </div>
+            <div class="flex items-center gap-2">
+                <i data-lucide="clock" class="w-3.5 h-3.5 text-brand-accent"></i>
+                Family Owned & Operated Since 2005
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 lg:top-10 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20 bg-white/90 backdrop-blur-md rounded-2xl px-6 shadow-lg border border-gray-100">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="relative">
+                        <i data-lucide="thermometer" class="w-10 h-10 text-brand-blue group-hover:text-brand-accent transition-colors"></i>
+                        <div class="absolute -top-1 -right-1 w-4 h-4 bg-brand-accent rounded-full border-2 border-white"></div>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-display font-extrabold leading-none tracking-tight">BROWNING</span>
+                        <span class="text-[10px] font-bold text-brand-accent tracking-[0.2em] uppercase">Heating & Air</span>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="text-sm font-bold hover:text-brand-accent transition-colors">Home</a>
+                    <a href="about.html" class="text-sm font-bold hover:text-brand-accent transition-colors">About</a>
+                    <a href="services.html" class="text-sm font-bold text-brand-accent">Services</a>
+                    <a href="contact.html" class="text-sm font-bold hover:text-brand-accent transition-colors">Contact</a>
+                    <a href="tel:3523064195" class="bg-brand-blue text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-brand-accent transition-all shadow-lg shadow-brand-blue/20 flex items-center gap-2">
+                        <i data-lucide="phone" class="w-4 h-4"></i>
+                        Call Now
+                    </a>
+                </div>
+
+                <button id="mobile-toggle" class="md:hidden p-2 text-brand-blue">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-brand-blue translate-x-full transition-transform duration-500 md:hidden">
+        <div class="p-6 flex flex-col h-full">
+            <div class="flex justify-between items-center mb-12">
+                <div class="flex items-center gap-3 text-white">
+                    <i data-lucide="thermometer" class="w-8 h-8"></i>
+                    <span class="text-xl font-display font-bold">BROWNING</span>
+                </div>
+                <button id="mobile-close" class="p-2 text-white">
+                    <i data-lucide="x" class="w-8 h-8"></i>
+                </button>
+            </div>
+            <div class="flex flex-col gap-8">
+                <a href="index.html" class="text-3xl font-display font-bold text-white hover:text-brand-accent transition-colors">Home</a>
+                <a href="about.html" class="text-3xl font-display font-bold text-white hover:text-brand-accent transition-colors">About</a>
+                <a href="services.html" class="text-3xl font-display font-bold text-brand-accent">Services</a>
+                <a href="contact.html" class="text-3xl font-display font-bold text-white hover:text-brand-accent transition-colors">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="pt-32 pb-24">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 text-center">
+            <div class="space-y-6 max-w-3xl mx-auto">
+                <h1 class="text-5xl md:text-6xl font-display font-bold text-brand-blue">
+                    Our <span class="text-brand-accent">Services</span>
+                </h1>
+                <p class="text-lg text-brand-gray leading-relaxed">
+                    From routine maintenance to complex system replacements, we offer a full range of HVAC services to keep your environment perfect.
+                </p>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="group bg-white p-8 rounded-3xl border border-gray-100 hover:border-brand-accent/30 hover:shadow-2xl hover:shadow-brand-accent/5 transition-all duration-500">
+                    <div class="w-14 h-14 bg-brand-light rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-accent transition-colors duration-500">
+                        <i data-lucide="wind" class="w-7 h-7 text-brand-accent group-hover:text-white transition-colors duration-500"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-brand-blue mb-4 group-hover:text-brand-accent transition-colors">AC Repair</h3>
+                    <p class="text-brand-gray text-sm leading-relaxed">Expert diagnostic and repair services for all air conditioning brands and models. We get your cool air back fast.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="group bg-white p-8 rounded-3xl border border-gray-100 hover:border-brand-accent/30 hover:shadow-2xl hover:shadow-brand-accent/5 transition-all duration-500">
+                    <div class="w-14 h-14 bg-brand-light rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-accent transition-colors duration-500">
+                        <i data-lucide="flame" class="w-7 h-7 text-brand-accent group-hover:text-white transition-colors duration-500"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-brand-blue mb-4 group-hover:text-brand-accent transition-colors">Heating Repair</h3>
+                    <p class="text-brand-gray text-sm leading-relaxed">Reliable furnace and heat pump repairs to keep your home warm during the chilly Florida winters.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="group bg-white p-8 rounded-3xl border border-gray-100 hover:border-brand-accent/30 hover:shadow-2xl hover:shadow-brand-accent/5 transition-all duration-500">
+                    <div class="w-14 h-14 bg-brand-light rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-accent transition-colors duration-500">
+                        <i data-lucide="settings" class="w-7 h-7 text-brand-accent group-hover:text-white transition-colors duration-500"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-brand-blue mb-4 group-hover:text-brand-accent transition-colors">HVAC Installation</h3>
+                    <p class="text-brand-gray text-sm leading-relaxed">Professional installation of high-efficiency heating and cooling systems tailored to your home's needs.</p>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="group bg-white p-8 rounded-3xl border border-gray-100 hover:border-brand-accent/30 hover:shadow-2xl hover:shadow-brand-accent/5 transition-all duration-500">
+                    <div class="w-14 h-14 bg-brand-light rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-accent transition-colors duration-500">
+                        <i data-lucide="zap" class="w-7 h-7 text-brand-accent group-hover:text-white transition-colors duration-500"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-brand-blue mb-4 group-hover:text-brand-accent transition-colors">Ductless AC</h3>
+                    <p class="text-brand-gray text-sm leading-relaxed">Modern, energy-efficient cooling solutions for homes without traditional ductwork.</p>
+                </div>
+                <!-- Service Card 5 -->
+                <div class="group bg-white p-8 rounded-3xl border border-gray-100 hover:border-brand-accent/30 hover:shadow-2xl hover:shadow-brand-accent/5 transition-all duration-500">
+                    <div class="w-14 h-14 bg-brand-light rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-accent transition-colors duration-500">
+                        <i data-lucide="shield-check" class="w-7 h-7 text-brand-accent group-hover:text-white transition-colors duration-500"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-brand-blue mb-4 group-hover:text-brand-accent transition-colors">Maintenance</h3>
+                    <p class="text-brand-gray text-sm leading-relaxed">Preventative tune-ups to extend the life of your HVAC system and reduce energy bills.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-brand-light py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                    <div class="space-y-12">
+                        <div class="space-y-4">
+                            <h2 class="text-brand-accent text-sm font-bold uppercase tracking-[0.2em]">The Browning Difference</h2>
+                            <p class="text-4xl font-display font-bold text-brand-blue">Why Our Service Stands Out</p>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="flex gap-6">
+                                <div class="bg-white p-3 rounded-2xl shadow-sm h-fit">
+                                    <i data-lucide="check-circle-2" class="w-6 h-6 text-brand-accent"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-brand-blue mb-2">Precision Diagnostics</h4>
+                                    <p class="text-brand-gray text-sm leading-relaxed">We don't just fix symptoms; we find the root cause of your HVAC issues using advanced diagnostic tools.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6">
+                                <div class="bg-white p-3 rounded-2xl shadow-sm h-fit">
+                                    <i data-lucide="check-circle-2" class="w-6 h-6 text-brand-accent"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-brand-blue mb-2">Energy Efficiency Focus</h4>
+                                    <p class="text-brand-gray text-sm leading-relaxed">We help you choose and maintain systems that lower your carbon footprint and your utility bills.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-brand-blue rounded-[3rem] p-12 text-white space-y-8 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-brand-accent/20 rounded-full blur-3xl"></div>
+                        <h3 class="text-3xl font-display font-bold">Ready for a Tune-up?</h3>
+                        <p class="text-gray-400 leading-relaxed">Regular maintenance can prevent 95% of unexpected AC failures. Schedule your seasonal check-up today.</p>
+                        <a href="tel:3523064195" class="flex items-center justify-center gap-3 bg-brand-accent text-white w-full py-5 rounded-2xl font-bold text-xl hover:bg-white hover:text-brand-blue transition-all">
+                            <i data-lucide="phone" class="w-6 h-6"></i>
+                            Schedule Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-blue text-white pt-24 pb-12 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="space-y-6">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <i data-lucide="thermometer" class="w-10 h-10 text-white"></i>
+                        <span class="text-2xl font-display font-bold tracking-tight">BROWNING</span>
+                    </a>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-8">Quick Links</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-brand-accent transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-brand-accent transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-brand-accent transition-colors">Our Services</a></li>
+                        <li><a href="contact.html" class="hover:text-brand-accent transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 text-center text-xs text-gray-500">
+                <p>© 2026 Browning Heating & Air Conditioning LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

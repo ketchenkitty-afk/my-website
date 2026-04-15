@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Browning Heating & Air Conditioning LLC</title>
+    <meta name="description" content="Learn about Browning Heating & Air Conditioning LLC, a family-owned HVAC company serving Gainesville since 2005.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#003366',
+                            accent: '#FF6600',
+                            gray: '#4B5563',
+                            light: '#F3F4F6',
+                            sky: '#00AEEF',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans text-brand-blue bg-white">
+
+    <!-- Top Bar -->
+    <div class="hidden lg:block bg-brand-blue text-white py-2 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center text-xs font-bold tracking-wider uppercase">
+            <div class="flex items-center gap-6">
+                <span class="flex items-center gap-2">
+                    <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-accent"></i>
+                    (352) 306-4195
+                </span>
+                <span class="flex items-center gap-2">
+                    <i data-lucide="shield-check" class="w-3.5 h-3.5 text-brand-accent"></i>
+                    License #CAC1819657
+                </span>
+            </div>
+            <div class="flex items-center gap-2">
+                <i data-lucide="clock" class="w-3.5 h-3.5 text-brand-accent"></i>
+                Family Owned & Operated Since 2005
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 lg:top-10 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20 bg-white/90 backdrop-blur-md rounded-2xl px-6 shadow-lg border border-gray-100">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="relative">
+                        <i data-lucide="thermometer" class="w-10 h-10 text-brand-blue group-hover:text-brand-accent transition-colors"></i>
+                        <div class="absolute -top-1 -right-1 w-4 h-4 bg-brand-accent rounded-full border-2 border-white"></div>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-display font-extrabold leading-none tracking-tight">BROWNING</span>
+                        <span class="text-[10px] font-bold text-brand-accent tracking-[0.2em] uppercase">Heating & Air</span>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="text-sm font-bold hover:text-brand-accent transition-colors">Home</a>
+                    <a href="about.html" class="text-sm font-bold text-brand-accent">About</a>
+                    <a href="services.html" class="text-sm font-bold hover:text-brand-accent transition-colors">Services</a>
+                    <a href="contact.html" class="text-sm font-bold hover:text-brand-accent transition-colors">Contact</a>
+                    <a href="tel:3523064195" class="bg-brand-blue text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-brand-accent transition-all shadow-lg shadow-brand-blue/20 flex items-center gap-2">
+                        <i data-lucide="phone" class="w-4 h-4"></i>
+                        Call Now
+                    </a>
+                </div>
+
+                <button id="mobile-toggle" class="md:hidden p-2 text-brand-blue">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-brand-blue translate-x-full transition-transform duration-500 md:hidden">
+        <div class="p-6 flex flex-col h-full">
+            <div class="flex justify-between items-center mb-12">
+                <div class="flex items-center gap-3 text-white">
+                    <i data-lucide="thermometer" class="w-8 h-8"></i>
+                    <span class="text-xl font-display font-bold">BROWNING</span>
+                </div>
+                <button id="mobile-close" class="p-2 text-white">
+                    <i data-lucide="x" class="w-8 h-8"></i>
+                </button>
+            </div>
+            <div class="flex flex-col gap-8">
+                <a href="index.html" class="text-3xl font-display font-bold text-white hover:text-brand-accent transition-colors">Home</a>
+                <a href="about.html" class="text-3xl font-display font-bold text-brand-accent">About</a>
+                <a href="services.html" class="text-3xl font-display font-bold text-white hover:text-brand-accent transition-colors">Services</a>
+                <a href="contact.html" class="text-3xl font-display font-bold text-white hover:text-brand-accent transition-colors">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="pt-32 pb-24">
+        <!-- Hero Section -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <h1 class="text-5xl md:text-6xl font-display font-bold text-brand-blue leading-tight">
+                        A Legacy of <span class="text-brand-accent">Comfort</span> in Gainesville
+                    </h1>
+                    <p class="text-lg text-brand-gray leading-relaxed">
+                        Browning Heating & Air Conditioning LLC is a family-owned and operated business dedicated to providing Gainesville and North Central Florida with superior HVAC services. Since 2005, we've built our reputation on honest work, fair pricing, and a deep commitment to our local community.
+                    </p>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="space-y-2">
+                            <p class="text-4xl font-display font-bold text-brand-blue">21+</p>
+                            <p class="text-sm text-brand-gray font-bold uppercase tracking-wider">Years of Service</p>
+                        </div>
+                        <div class="space-y-2">
+                            <p class="text-4xl font-display font-bold text-brand-blue">5k+</p>
+                            <p class="text-sm text-brand-gray font-bold uppercase tracking-wider">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1521737706096-c9582f195d62?auto=format&fit=crop&w=800&h=600&q=80" alt="Browning HVAC Professional Team" class="rounded-3xl shadow-2xl premium-shadow">
+                    <div class="absolute -bottom-8 -left-8 bg-brand-accent text-white p-8 rounded-3xl shadow-xl hidden md:block">
+                        <p class="text-2xl font-display font-bold">Local Experts</p>
+                        <p class="text-sm opacity-90">Family owned & operated</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="bg-brand-light py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-brand-accent text-sm font-bold uppercase tracking-[0.2em] mb-4">Our Values</h2>
+                    <p class="text-4xl font-display font-bold text-brand-blue">What Drives Us Every Day</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 text-center space-y-4">
+                        <div class="w-12 h-12 bg-brand-accent/10 rounded-xl flex items-center justify-center mx-auto">
+                            <i data-lucide="shield-check" class="w-6 h-6 text-brand-accent"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue">Integrity</h3>
+                        <p class="text-brand-gray text-sm leading-relaxed">We believe in honest assessments and fair pricing. No unnecessary repairs, ever.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 text-center space-y-4">
+                        <div class="w-12 h-12 bg-brand-accent/10 rounded-xl flex items-center justify-center mx-auto">
+                            <i data-lucide="users" class="w-6 h-6 text-brand-accent"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue">Community</h3>
+                        <p class="text-brand-gray text-sm leading-relaxed">We're proud to serve our neighbors in Gainesville and surrounding North Florida towns.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 text-center space-y-4">
+                        <div class="w-12 h-12 bg-brand-accent/10 rounded-xl flex items-center justify-center mx-auto">
+                            <i data-lucide="award" class="w-6 h-6 text-brand-accent"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue">Excellence</h3>
+                        <p class="text-brand-gray text-sm leading-relaxed">Our technicians are continuously trained on the latest HVAC technologies and standards.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 text-center space-y-4">
+                        <div class="w-12 h-12 bg-brand-accent/10 rounded-xl flex items-center justify-center mx-auto">
+                            <i data-lucide="heart" class="w-6 h-6 text-brand-accent"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue">Customer First</h3>
+                        <p class="text-brand-gray text-sm leading-relaxed">Your comfort and satisfaction are the metrics by which we measure our success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-blue text-white pt-24 pb-12 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="space-y-6">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <i data-lucide="thermometer" class="w-10 h-10 text-white"></i>
+                        <span class="text-2xl font-display font-bold tracking-tight">BROWNING</span>
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Gainesville's premier choice for reliable heating and air conditioning services. Family owned and operated since 2005.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-8">Quick Links</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-brand-accent transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-brand-accent transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-brand-accent transition-colors">Our Services</a></li>
+                        <li><a href="contact.html" class="hover:text-brand-accent transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-8">Contact Info</h4>
+                    <ul class="space-y-6 text-gray-400 text-sm">
+                        <li class="flex gap-4">
+                            <i data-lucide="phone" class="w-5 h-5 text-brand-accent shrink-0"></i>
+                            <span>(352) 306-4195</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-brand-accent shrink-0"></i>
+                            <span>2604 NE 18th Terrace, Gainesville, FL 32609</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 text-center text-xs text-gray-500">
+                <p>© 2026 Browning Heating & Air Conditioning LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

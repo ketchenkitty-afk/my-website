@@ -1,0 +1,18 @@
+.premium-shadow {
+    box-shadow: 0 25px 50px -12px rgba(0, 51, 102, 0.15);
+}
+.nav-glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+.mobile-menu-active {
+    transform: translateX(0) !important;
+}
+@keyframes bounce-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.animate-bounce-slow {
+    animation: bounce-slow 4s ease-in-out infinite;
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Browning Heating & Air Conditioning LLC</title>
+    <meta name="description" content="Get a quote for AC repair or heating installation in Gainesville, FL. Contact Browning Heating & Air Conditioning LLC today.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#003366',
+                            accent: '#FF6600',
+                            gray: '#4B5563',
+                            light: '#F3F4F6',
+                            sky: '#00AEEF',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans text-brand-blue bg-white">
+
+    <!-- Top Bar -->
+    <div class="hidden lg:block bg-brand-blue text-white py-2 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center text-xs font-bold tracking-wider uppercase">
+            <div class="flex items-center gap-6">
+                <span class="flex items-center gap-2">
+                    <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-accent"></i>
+                    (352) 306-4195
+                </span>
+                <span class="flex items-center gap-2">
+                    <i data-lucide="shield-check" class="w-3.5 h-3.5 text-brand-accent"></i>
+                    License #CAC1819657
+                </span>
+            </div>
+            <div class="flex items-center gap-2">
+                <i data-lucide="clock" class="w-3.5 h-3.5 text-brand-accent"></i>
+                Family Owned & Operated Since 2005
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 lg:top-10 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20 bg-white/90 backdrop-blur-md rounded-2xl px-6 shadow-lg border border-gray-100">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="relative">
+                        <i data-lucide="thermometer" class="w-10 h-10 text-brand-blue group-hover:text-brand-accent transition-colors"></i>
+                        <div class="absolute -top-1 -right-1 w-4 h-4 bg-brand-accent rounded-full border-2 border-white"></div>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-display font-extrabold leading-none tracking-tight">BROWNING</span>
+                        <span class="text-[10px] font-bold text-brand-accent tracking-[0.2em] uppercase">Heating & Air</span>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="text-sm font-bold hover:text-brand-accent transition-colors">Home</a>
+                    <a href="about.html" class="text-sm font-bold hover:text-brand-accent transition-colors">About</a>
+                    <a href="services.html" class="text-sm font-bold hover:text-brand-accent transition-colors">Services</a>
+                    <a href="contact.html" class="text-sm font-bold text-brand-accent">Contact</a>
+                    <a href="tel:3523064195" class="bg-brand-blue text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-brand-accent transition-all shadow-lg shadow-brand-blue/20 flex items-center gap-2">
+                        <i data-lucide="phone" class="w-4 h-4"></i>
+                        Call Now
+                    </a>
+                </div>
+
+                <button id="mobile-toggle" class="md:hidden p-2 text-brand-blue">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-brand-blue translate-x-full transition-transform duration-500 md:hidden">
+        <div class="p-6 flex flex-col h-full">
+            <div class="flex justify-between items-center mb-12">
+                <div class="flex items-center gap-3 text-white">
+                    <i data-lucide="thermometer" class="w-8 h-8"></i>
+                    <span class="text-xl font-display font-bold">BROWNING</span>
+                </div>
+                <button id="mobile-close" class="p-2 text-white">
+                    <i data-lucide="x" class="w-8 h-8"></i>
+                </button>
+            </div>
+            <div class="flex flex-col gap-8">
+                <a href="index.html" class="text-3xl font-display font-bold text-white hover:text-brand-accent transition-colors">Home</a>
+                <a href="about.html" class="text-3xl font-display font-bold text-white hover:text-brand-accent transition-colors">About</a>
+                <a href="services.html" class="text-3xl font-display font-bold text-white hover:text-brand-accent transition-colors">Services</a>
+                <a href="contact.html" class="text-3xl font-display font-bold text-brand-accent">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="pt-32 pb-24">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+                <!-- Contact Info -->
+                <div class="space-y-12">
+                    <div class="space-y-6">
+                        <h1 class="text-5xl md:text-6xl font-display font-bold text-brand-blue">
+                            Get a <span class="text-brand-accent">Quote</span>
+                        </h1>
+                        <p class="text-lg text-brand-gray leading-relaxed">
+                            Have an HVAC emergency or need a quote for a new installation? Fill out the form or give us a call. We're here to help.
+                        </p>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <div class="bg-brand-light p-4 rounded-2xl h-fit">
+                                <i data-lucide="phone" class="w-6 h-6 text-brand-accent"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-brand-gray uppercase tracking-wider mb-1">Phone</h4>
+                                <a href="tel:3523064195" class="text-2xl font-display font-bold text-brand-blue hover:text-brand-accent transition-colors">
+                                    (352) 306-4195
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-6">
+                            <div class="bg-brand-light p-4 rounded-2xl h-fit">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-brand-accent"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-brand-gray uppercase tracking-wider mb-1">Address</h4>
+                                <p class="text-xl font-medium text-brand-blue leading-relaxed">
+                                    2604 NE 18th Terrace, Gainesville, FL 32609
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-6">
+                            <div class="bg-brand-light p-4 rounded-2xl h-fit">
+                                <i data-lucide="clock" class="w-6 h-6 text-brand-accent"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-brand-gray uppercase tracking-wider mb-1">Business Hours</h4>
+                                <p class="text-xl font-medium text-brand-blue">
+                                    Mon - Fri: 8:00 AM - 5:00 PM
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="rounded-[2rem] overflow-hidden h-64 bg-gray-100 border border-gray-200 relative">
+                        <div class="absolute inset-0 flex items-center justify-center text-brand-gray font-medium">
+                            <div class="text-center">
+                                <i data-lucide="map-pin" class="w-8 h-8 mx-auto mb-2 opacity-50"></i>
+                                <p>Interactive Map View</p>
+                                <p class="text-xs">Gainesville, FL 32609</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white p-8 md:p-12 rounded-[3rem] shadow-2xl premium-shadow border border-gray-100">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold text-brand-blue ml-1">Full Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-6 py-4 rounded-2xl bg-brand-light border-none focus:ring-2 focus:ring-brand-accent transition-all outline-none">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold text-brand-blue ml-1">Phone Number</label>
+                                <input type="tel" required placeholder="(352) 000-0000" class="w-full px-6 py-4 rounded-2xl bg-brand-light border-none focus:ring-2 focus:ring-brand-accent transition-all outline-none">
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold text-brand-blue ml-1">Email Address</label>
+                            <input type="email" required placeholder="john@example.com" class="w-full px-6 py-4 rounded-2xl bg-brand-light border-none focus:ring-2 focus:ring-brand-accent transition-all outline-none">
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold text-brand-blue ml-1">Service Needed</label>
+                            <select class="w-full px-6 py-4 rounded-2xl bg-brand-light border-none focus:ring-2 focus:ring-brand-accent transition-all outline-none appearance-none">
+                                <option>AC Repair</option>
+                                <option>Heating Repair</option>
+                                <option>HVAC Installation</option>
+                                <option>Maintenance</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold text-brand-blue ml-1">Your Message</label>
+                            <textarea rows="4" placeholder="How can we help you today?" class="w-full px-6 py-4 rounded-2xl bg-brand-light border-none focus:ring-2 focus:ring-brand-accent transition-all outline-none resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-blue text-white py-5 rounded-2xl font-bold text-lg hover:bg-brand-accent transition-all shadow-xl shadow-brand-blue/20 flex items-center justify-center gap-3 group">
+                            Send Message
+                            <i data-lucide="send" class="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-blue text-white pt-24 pb-12 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="space-y-6">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <i data-lucide="thermometer" class="w-10 h-10 text-white"></i>
+                        <span class="text-2xl font-display font-bold tracking-tight">BROWNING</span>
+                    </a>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 text-center text-xs text-gray-500">
+                <p>© 2026 Browning Heating & Air Conditioning LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
